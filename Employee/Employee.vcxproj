@@ -120,6 +120,8 @@
     <ClInclude Include="Director.h" />
     <ClInclude Include="Employee.h" />
     <ClInclude Include="Human.h" />
+    <ClInclude Include="Organization.h" />
+    <ClInclude Include="OrganizationConsole.h" />
     <ClInclude Include="Proger.h" />
     <ClInclude Include="Sales.h" />
   </ItemGroup>
@@ -130,6 +132,8 @@
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="Human.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Organization.cpp" />
+    <ClCompile Include="OrganizationConsole.cpp" />
     <ClCompile Include="Proger.cpp" />
     <ClCompile Include="Sales.cpp" />
   </ItemGroup>

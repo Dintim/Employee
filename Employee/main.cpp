@@ -1,9 +1,11 @@
-#include "Proger.h"
+#include "OrganizationConsole.h"
 
 void main()
 {
-	Proger p("dinara", 36, "female", 13, 2, 1);
-	p.info();
-	
+	OrganizationConsole e;
+	e.org.addEmployee(new Acounter("Petya", 30, "male", 15, 1));
+	e.org.addEmployee(new Proger("Masha", 40, "female", 20, 6, 1));
+	e.org.addEmployee(new Director("Dinara", 35, "female", 15));
+	e.start();
 	system("pause");
 }
