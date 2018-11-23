@@ -66,3 +66,25 @@ double Organization::getSalaryFund() const
 	}
 	return res;
 }
+
+Employee * Organization::getEmployeeById(int id)
+{
+	for (size_t i = 0; i < employees.size(); i++)
+	{
+		if (employees[i]->getId() == id) {
+			return employees[i].get();
+		}
+	}
+	return nullptr;
+}
+
+const Employee * Organization::getEmployeeById(int id) const
+{
+	for (size_t i = 0; i < employees.size(); i++)
+	{
+		if (employees[i]->getId() == id) {
+			return employees[i].get();
+		}
+	}
+	return nullptr;
+}

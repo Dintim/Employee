@@ -23,10 +23,18 @@ private:
 	void mainMenu();
 	void addEmpMenu();
 	void removeEmpMenu();
-	void showInfo();
+	void showInfo()const;
 	void setEmpInfoMenu();
 
 	void setOrgNameMenu();
 	void setSalaryMenu();
+	void showShortEmpInfo()const;
+	void unknownCommand()const;
+	void incorrectId()const;
+
+	void editEmployeeMenu(Employee* emp);
+	void editEmployeeInfo(Employee* emp);
+	void changePosition(Employee* emp);
+	void salaryInfo(Employee* emp)const;
 };
 

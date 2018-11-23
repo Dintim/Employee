@@ -22,6 +22,10 @@ public:
 	double getSalaryFund()const;
 	int getCntEmployees()const { return employees.size(); }
 	Employee& operator[](int index) { return *employees[index]; }
+	const Employee& operator[](int index) const { return *employees[index]; }
+
+	Employee* getEmployeeById(int id);
+	const Employee* getEmployeeById(int id)const;
 	
 };
 

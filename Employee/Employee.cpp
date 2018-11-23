@@ -16,7 +16,9 @@ void Employee::setWorkYears(int workYears)
 
 void Employee::info() const
 {
+	cout << "position: " << string(typeid(*this).name()).substr(6) << endl;
 	Human::info();
 	cout << "working years: " << workYears << endl;
 }
+
 

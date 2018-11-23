@@ -14,5 +14,7 @@ public:
 	void info()const override;
 	virtual double getSalary()const=0;
 	int getId()const { return id; }
+	string getPosition()const { return string(typeid(*this).name()).substr(6); }
+	
 };
 
